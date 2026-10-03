@@ -1,0 +1,15 @@
+{
+  "name": "learning-site-helper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "手动登录、选择课程和只读视频状态监控",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node src/index.js",
+    "login": "node src/index.js --login",
+    "check": "node --check config.js && node --check src/login.js && node --check src/courses.js && node --check src/player.js && node --check src/index.js && node --check tampermonkey/learning-helper.user.js",
+    "test": "npm run check && node --test"
+  },
+  "dependencies": { "playwright": "^1.51.1" }
+}

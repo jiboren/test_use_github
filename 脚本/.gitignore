@@ -1,0 +1,4 @@
+node_modules/
+storageState.json
+storageState.json.tmp
+*.log
